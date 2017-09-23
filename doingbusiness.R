@@ -44,7 +44,7 @@ length(ease_dim$Economy) # probably regions do not have ranking by single dimens
 sum(ease_dim$Economy %in% dat$country) # 176 country names out of 212 are matched
 ease_dim[!ease_dim$Economy %in% dat$country,'Economy'] # the ones not matched are Cities, or countries with different names, let's fix this..
 which(!ease_dim$Economy %in% dat$country)
-ease_dim[which(!ease_dim$Economy %in% dat$country)[c(7, 8,9,10,15,18,21,29,30,36)], 'Economy'] <- c('Congo, Dem. Rep.', 'Congo, Rep.', "Cote d'Ivoire", 'Egypt, Arab Rep.', 'Iran, Islamic Rep.', 'North Korea', 'Micronesia, Fed. Sts.', 'Sao Tome and Principe', 'St. Kitts and Nevis', 'Yemen, Rep.')
+ease_dim[which(!ease_dim$Economy %in% dat$country)[c(7, 8,9,10,15,18,21,29,30,36)], 'Economy'] <- c('Congo, Dem. Rep.', 'Congo, Rep.', "Cote d'Ivoire", 'Egypt, Arab Rep.', 'Iran, Islamic Rep.', 'Korea, Rep.', 'Micronesia, Fed. Sts.', 'Sao Tome and Principe', 'St. Kitts and Nevis', 'Yemen, Rep.')
 
 # convert ranking columns to numeric
 for(i in 3:ncol(ease_dim)) {

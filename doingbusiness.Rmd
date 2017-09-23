@@ -75,7 +75,7 @@ Some countries in the two datasets do not match. This is because in the data dow
 
 ```{r}
 which(!ease_dim$Economy %in% dat$country)
-ease_dim[which(!ease_dim$Economy %in% dat$country)[c(7, 8,9,10,15,18,21,29,30,36)], 'Economy'] <- c('Congo, Dem. Rep.', 'Congo, Rep.', "Cote d'Ivoire", 'Egypt, Arab Rep.', 'Iran, Islamic Rep.', 'North Korea', 'Micronesia, Fed. Sts.', 'Sao Tome and Principe', 'St. Kitts and Nevis', 'Yemen, Rep.')
+ease_dim[which(!ease_dim$Economy %in% dat$country)[c(7, 8,9,10,15,18,21,29,30,36)], 'Economy'] <- c('Congo, Dem. Rep.', 'Congo, Rep.', "Cote d'Ivoire", 'Egypt, Arab Rep.', 'Iran, Islamic Rep.', 'Korea, Rep.', 'Micronesia, Fed. Sts.', 'Sao Tome and Principe', 'St. Kitts and Nevis', 'Yemen, Rep.')
 ```
 
 Convert ranking columns to numeric
